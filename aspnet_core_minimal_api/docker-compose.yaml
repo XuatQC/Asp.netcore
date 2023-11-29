@@ -1,0 +1,43 @@
+version: "3.9"
+# define all services
+services:
+  postgresdb:
+    image: "postgres:ssv"
+    platform: linux/x86_64
+    restart: "no"
+    container_name: postgres-ssv
+    ports:
+      - 5432:5432
+    # privileged: "true"
+    build:
+      context: ./
+      dockerfile: dockerfile/postgres.dockerfile
+    environment:
+      - POSTGRES_DB=ssv
+      - POSTGRES_USER=ssv
+      - POSTGRES_PASSWORD=Ab123456a@
+    networks:
+      - app-network
+
+  redisdb:
+    image: "redis:latest"
+    restart: "no"
+    container_name: redis-ssv
+    ports:
+      - "6379:6379"
+    privileged: true
+    depends_on:
+      - postgresdb
+    command: ["redis-server", "--appendonly", "yes"]
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    networks:
+      - app-network
+
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
