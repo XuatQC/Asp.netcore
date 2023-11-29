@@ -1,0 +1,232 @@
+// for fixed layout
+html {
+  max-width: 1903px !important;
+  margin: 0 auto;
+}
+
+// for can scrollable when smaller
+body {
+  min-width: 1903px !important;
+  font-size: 16px;
+}
+
+#header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+* :focus-visible {
+  outline: none;
+}
+
+@font-face {
+  font-family: notoSansJP;
+  src: url('/font/NotoSansJP-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: roboto;
+  src: url('/font/Roboto-Regular');
+}
+
+* {
+  font-family: notoSansJP;
+}
+
+input[type='checkbox'],
+input[type='radio'],
+label[for],
+select {
+  cursor: pointer;
+  user-select: none;
+}
+
+
+// Override for fix pulling layout to left when show dialog
+.q-body--fullscreen-mixin,
+.q-body--prevent-scroll {
+  position: unset !important;
+  overflow: hidden !important;
+}
+
+.fact-item:focus-within,
+.conclusion-item:focus-within {
+  background-color: lightyellow;
+}
+
+.q-field {
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+// ======================= Rich Text =======================
+.rich-text {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+
+  .ql-editor {
+    padding: 4px;
+    overflow-y: auto;
+    word-break: break-word;
+  }
+
+  &.ql-container {
+    font-size: 16px;
+  }
+
+  .ql-size {
+    .ql-picker-item {
+      &::before {
+        content: attr(data-value) !important;
+      }
+    }
+
+    .ql-picker-label {
+      &::before {
+        content: attr(data-value) !important;
+      }
+    }
+  }
+
+  .ql-toolbar {
+    .ql-formats {
+      float: left;
+
+      &:nth-child(5) {
+        clear: left;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .ql-font-arial {
+    font-family: 'Arial';
+  }
+
+  .ql-font-timesNewRoman {
+    font-family: 'Times New Roman';
+  }
+
+  .ql-font-notoSansJP {
+    font-family: 'notoSansJP';
+  }
+
+  .ql-font-roboto {
+    font-family: 'roboto';
+  }
+}
+
+.rich-text.resize {
+  .ql-editor {
+    resize: vertical;
+    min-height: 100%;
+    height: 0;
+  }
+}
+
+.rich-text.ql-disabled {
+  background-color: #efefef4d;
+}
+
+.rich-text.ql-bubble {
+  .ql-tooltip {
+    border-radius: 0;
+    z-index: 1;
+    padding: 0;
+  }
+}
+
+.rich-text.ql-snow {
+  .ql-tooltip {
+    &::before {
+      content: none;
+    }
+  }
+
+  .ql-picker.ql-font {
+    width: 150px;
+
+    .ql-picker-label[data-value='notoSansJP']::before,
+    .ql-picker-item[data-value='notoSansJP']::before {
+      content: 'Noto Sans JP';
+      font-family: 'notoSansJP';
+    }
+
+    .ql-picker-label[data-value='timesNewRoman']::before,
+    .ql-picker-item[data-value='timesNewRoman']::before {
+      content: 'Times New Roman';
+      font-family: 'Times New Roman';
+    }
+
+    .ql-picker-label[data-value='arial']::before,
+    .ql-picker-item[data-value='arial']::before {
+      content: 'Arial';
+      font-family: 'Arial';
+    }
+
+    .ql-picker-label[data-value='roboto']::before,
+    .ql-picker-item[data-value='roboto']::before {
+      content: 'Roboto';
+      font-family: 'roboto';
+    }
+
+  }
+
+  .ql-picker.ql-size {
+    width: 60px;
+    &:not(.ql-expanded) {
+      .ql-picker-label:not([data-value])::before,
+      .ql-picker-label:not([data-value]) .ql-stroke{
+        color: #06c;
+        stroke: #06c;
+      }
+    }
+    .ql-picker-label:not([data-value])::before,
+      .ql-picker-item:not([data-value])::before {
+        content: '16px' !important;
+      }
+  }
+}
+
+// ======================= Select Box =======================
+
+.select-box.filter {
+  &:focus-within {
+    .q-field__native {
+      span {
+        display: none;
+      }
+
+      input {
+        display: block;
+      }
+    }
+  }
+
+  .q-field__native {
+    input {
+      display: none;
+    }
+  }
+}
+
+.select-box {
+  background-color: #fff;
+  font-size: 1rem;
+  .q-field__native {
+    span {
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+// for fix display g not full when select box is english
+.q-field--auto-height .q-field__native, .q-field--auto-height
+.q-field__prefix, .q-field--auto-height .q-field__suffix {
+    line-height: 25px;
+}

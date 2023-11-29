@@ -1,0 +1,9 @@
+/FNDSystem.API/bin/
+/FNDSystem.API/obj/
+/FNDSystem.API/logs/
+/FNDSystem.Core/obj/
+/FNDSystem.Core/bin/
+/FNDSystem.Infrastructure/bin/
+/FNDSystem.Infrastructure/obj/
+/.vs/
+/FNDSystem.API/wwwroot/Photo/OBS/*.jpeg
