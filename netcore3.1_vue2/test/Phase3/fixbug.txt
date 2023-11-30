@@ -1,0 +1,9 @@
+bug liên quan đến brand
+- brand: gen mã order
+	1. gửi mail(mail order, 
+					mail remind nhận tiền, 
+					mail cancel, 
+					mail update order, 
+					mail hoàn thành nhận tiền)
+	2. Hiển thị list order
+	3. Tìm kiếm brand

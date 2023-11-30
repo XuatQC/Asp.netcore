@@ -1,0 +1,2220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">80</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="order" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;reservation&quot;: {&#xd;
+    &quot;status&quot;: &quot;01&quot;,&#xd;
+    &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+    &quot;total&quot;: 44000,&#xd;
+    &quot;totalQuantity&quot;: 4&#xd;
+  },&#xd;
+  &quot;dataProduct&quot;: [&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;XXS&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 1,&#xd;
+      &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T19:05:42&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;XS&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 1,&#xd;
+      &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:50&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;S&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 1,&#xd;
+      &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:49&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;M&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 1,&#xd;
+      &quot;updateUserCd&quot;: &quot;87654321&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:49&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;custInfo&quot;: {&#xd;
+    &quot;province&quot;: &quot;01&quot;,&#xd;
+    &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+    &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+    &quot;kanjiFamilyName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanjiFirstName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+    &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+    &quot;phoneNumber&quot;: &quot;065656522&quot;,&#xd;
+    &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+    &quot;mailAddressConfirm&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+    &quot;provinceName&quot;: &quot;北海道&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/api/ReservationDetail/InsertReservationDetail</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-order" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en,ja;q=0.9,en-US;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1933</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">_ga=GA1.1.720304490.1604401131; _gid=GA1.1.997947762.1604401131</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/orderConfirm</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="send mail" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;XXS&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:05:42&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000,&#xd;
+    &quot;rsvId&quot;: &quot;R2011030342&quot;&#xd;
+  },&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;XS&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:50&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000&#xd;
+  },&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;S&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:49&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000&#xd;
+  },&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;M&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;87654321&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:49&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000&#xd;
+  }&#xd;
+]</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/api/Reservation/SendMailOrder?productName=ALGY%E3%80%80%E7%A6%8F%E8%A2%8B7%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88%E3%80%90%E4%BA%88%E7%B4%84%E3%80%91 </stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-send mail" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en,ja;q=0.9,en-US;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1518</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">_ga=GA1.1.720304490.1604401131; _gid=GA1.1.997947762.1604401131</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/orderFinish</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">31</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;UserCode&quot;:&quot;730104&quot;,&quot;Password&quot;:&quot;730104&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/admin/api/MUser/Login?autoLogin=0</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">ja,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5,en;q=0.4</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">41</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8FCZpLi1xl1LvpJ%2BQPXNJ0SXJuaKrdbAvL%2Fbd4ikb4tksrFT%2Fd4yt2Ix5PQVRMTNQhn%2FcC1v5qDeqxoney%2FMq6EB48eZog3L6SUP1oWInHQjFJIz4sQpGx9BPP%2F19MhOFxilNSsfoBqYvE%2FmelHcQ0AMGplqs%2F%2FMsy7w2yNzRwiN</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/admin/login</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/90.0.148 Chrome/84.0.4147.148 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Nhận tiền-vsc" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;shopName&quot;: &quot;ALGY SoLaDo竹下通り店&quot;,&#xd;
+  &quot;statusName&quot;: &quot;予約(入金待ち)&quot;,&#xd;
+  &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanjiFamilyName&quot;: &quot;20 lan 2&quot;,&#xd;
+  &quot;kanjiFirstName&quot;: &quot;order&quot;,&#xd;
+  &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+  &quot;province&quot;: &quot;01&quot;,&#xd;
+  &quot;provinceName&quot;: &quot;北海道&quot;,&#xd;
+  &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+  &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+  &quot;adrCd3&quot;: null,&#xd;
+  &quot;phoneNumber&quot;: &quot;012345678&quot;,&#xd;
+  &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+  &quot;sendTo&quot;: &quot;01&quot;,&#xd;
+  &quot;reserveMailStatus&quot;: &quot;01&quot;,&#xd;
+  &quot;reserveMailStatusName&quot;: null,&#xd;
+  &quot;remindMailStatus&quot;: null,&#xd;
+  &quot;remindMailStatusName&quot;: null,&#xd;
+  &quot;cancelMailStatus&quot;: null,&#xd;
+  &quot;updateDtTmSendMail&quot;: &quot;2020-10-29T12:27:07&quot;,&#xd;
+  &quot;updateDtTmCust&quot;: &quot;2020-10-29T12:26:47&quot;,&#xd;
+  &quot;mailBounce&quot;: null,&#xd;
+  &quot;mailBounceName&quot;: null,&#xd;
+  &quot;mailBounceDescription&quot;: null,&#xd;
+  &quot;reservationDetails&quot;: null,&#xd;
+  &quot;reservehistories&quot;: null,&#xd;
+  &quot;rsvId&quot;: &quot;${rsvId}&quot;,&#xd;
+  &quot;custId&quot;: ${custId},&#xd;
+  &quot;status&quot;: &quot;02&quot;,&#xd;
+  &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+  &quot;barCode&quot;: &quot;${barCode}&quot;,&#xd;
+  &quot;totalQuantity&quot;: 4,&#xd;
+  &quot;total&quot;: 44000,&#xd;
+  &quot;updateUserCd&quot;: null,&#xd;
+  &quot;updateDtTm&quot;: &quot;${updateDtTm}&quot;,&#xd;
+  &quot;insertDtTm&quot;: &quot;${insertDtTm}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/shop/api/Store/UpdateReserve?lastStatus=01&amp;shopName=ALGY+SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97&amp;updateUserCd=730104</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">ja,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5,en;q=0.4</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTY4NDg4NywiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.gDXFL3gjPk4YKTvAtyyVoK4EFkymN-1g3GHyVxrvucg</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">927</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8FCZpLi1xl1LvpJ%2BQPXNJ0Tx8MYQvI57NCmY%2BzYV8IlV4Le%2BgaBeGbdP8y%2BZm6NY8Z4Et%2BU5kuja1Aqov8hM4kuon%2Fzw5P8k8jMXf93H1CpL8EOq%2Fstze5ora%2Fx9SfoMCKCdntusbmCVid3kEokUKZehjZVB3EDB7brmHFqjgrZA; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTY4NDg4NywiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.gDXFL3gjPk4YKTvAtyyVoK4EFkymN-1g3GHyVxrvucg; userData=%7B%22userCode%22%3A%22730104%22%2C%22password%22%3Anull%2C%22userNameKanji%22%3A%22ALGY%20SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97%22%2C%22userNameKana%22%3A%22%EF%BD%B1%EF%BE%99%EF%BD%BC%EF%BE%9E%EF%BD%B0%20%EF%BD%BF%EF%BE%97%EF%BE%84%EF%BE%9E%EF%BE%80%EF%BD%B9%EF%BD%BC%EF%BE%80%EF%BE%84%EF%BE%9E%EF%BD%B5%EF%BE%98%EF%BE%83%EF%BE%9D%22%2C%22mailAddress%22%3A%22730104%40shop.fointl.com%22%2C%22department%22%3A2%2C%22updateUserCd%22%3A%22auto%22%2C%22updateDtTm%22%3A%222020-10-26T16%3A07%3A06%22%7D</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/shop/home</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/90.0.148 Chrome/84.0.4147.148 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">C:/Users/LocNT/Desktop/FO/1.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">rsvId,custId,barCode,updateDtTm,insertDtTm</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="bàn giao" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;shopName&quot;: &quot;ALGY SoLaDo竹下通り店&quot;,&#xd;
+  &quot;statusName&quot;: &quot;入金完了(引渡し待ち）&quot;,&#xd;
+  &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanjiFamilyName&quot;: &quot;50&quot;,&#xd;
+  &quot;kanjiFirstName&quot;: &quot;51&quot;,&#xd;
+  &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+  &quot;province&quot;: &quot;01&quot;,&#xd;
+  &quot;provinceName&quot;: &quot;北海道&quot;,&#xd;
+  &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+  &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+  &quot;adrCd3&quot;: null,&#xd;
+  &quot;phoneNumber&quot;: &quot;0656562532&quot;,&#xd;
+  &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+  &quot;sendTo&quot;: &quot;01&quot;,&#xd;
+  &quot;reserveMailStatus&quot;: &quot;01&quot;,&#xd;
+  &quot;reserveMailStatusName&quot;: null,&#xd;
+  &quot;remindMailStatus&quot;: null,&#xd;
+  &quot;remindMailStatusName&quot;: null,&#xd;
+  &quot;cancelMailStatus&quot;: null,&#xd;
+  &quot;updateDtTmSendMail&quot;: &quot;2020-10-30T15:51:39&quot;,&#xd;
+  &quot;updateDtTmCust&quot;: &quot;2020-10-30T15:47:06&quot;,&#xd;
+  &quot;mailBounce&quot;: null,&#xd;
+  &quot;mailBounceName&quot;: null,&#xd;
+  &quot;mailBounceDescription&quot;: null,&#xd;
+  &quot;reservationDetails&quot;: null,&#xd;
+  &quot;reservehistories&quot;: null,&#xd;
+  &quot;rsvId&quot;: &quot;${rsvId}&quot;,&#xd;
+  &quot;custId&quot;: ${custId},&#xd;
+  &quot;status&quot;: &quot;04&quot;,&#xd;
+  &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+  &quot;barCode&quot;: &quot;${barCode}&quot;,&#xd;
+  &quot;totalQuantity&quot;: 4,&#xd;
+  &quot;total&quot;: 99000,&#xd;
+  &quot;updateUserCd&quot;: &quot;730104&quot;,&#xd;
+  &quot;updateDtTm&quot;: &quot;${updateDtTm}&quot;,&#xd;
+  &quot;insertDtTm&quot;: &quot;${insertDtT}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/shop/api/Store/UpdateReserve?lastStatus=02&amp;shopName=ALGY+SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97&amp;updateUserCd=730104</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">ja,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5,en;q=0.4</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTM0MDI2MCwiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.S5K9FZ3sO7_uLWfaFcJuQ-9m-ymmjacB2iKQ2-b4Oy4</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">941</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8FCZpLi1xl1LvpJ%2BQPXNJ0Qfwoip3pkgvTYKrKVpGQmlQCccylCPpcrvtcnzAiJ5dYqf3VU7qzxvmzKRq2%2FSjFypXAt9OkG89a7smr0F5CFx8LeUROOGaLyvcl2GMYeL4lwckH%2FSgeDCasxtil0AMdkugzEFoxHARHUZBP4k3Td2; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTM0MDI2MCwiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.S5K9FZ3sO7_uLWfaFcJuQ-9m-ymmjacB2iKQ2-b4Oy4; userData=%7B%22userCode%22%3A%22730104%22%2C%22password%22%3Anull%2C%22userNameKanji%22%3A%22ALGY%20SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97%22%2C%22userNameKana%22%3A%22%EF%BD%B1%EF%BE%99%EF%BD%BC%EF%BE%9E%EF%BD%B0%20%EF%BD%BF%EF%BE%97%EF%BE%84%EF%BE%9E%EF%BE%80%EF%BD%B9%EF%BD%BC%EF%BE%80%EF%BE%84%EF%BE%9E%EF%BD%B5%EF%BE%98%EF%BE%83%EF%BE%9D%22%2C%22mailAddress%22%3A%22730104%40shop.fointl.com%22%2C%22department%22%3A2%2C%22updateUserCd%22%3A%22auto%22%2C%22updateDtTm%22%3A%222020-10-26T16%3A07%3A06%22%7D</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/shop/home</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/90.0.148 Chrome/84.0.4147.148 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">C:/Users/LocNT/Desktop/FO/b.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">rsvId,custId,barCode,updateDtTm,insertDtTm</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cancle order" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+  {&#xd;
+    &quot;shopName&quot;: &quot;ALGY SoLaDo竹下通り店&quot;,&#xd;
+    &quot;statusName&quot;: &quot;入金完了(引渡し待ち）&quot;,&#xd;
+    &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanjiFamilyName&quot;: &quot;1&quot;,&#xd;
+    &quot;kanjiFirstName&quot;: &quot;order&quot;,&#xd;
+    &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+    &quot;province&quot;: &quot;01&quot;,&#xd;
+    &quot;provinceName&quot;: &quot;北海道&quot;,&#xd;
+    &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+    &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+    &quot;adrCd3&quot;: null,&#xd;
+    &quot;phoneNumber&quot;: &quot;012345678&quot;,&#xd;
+    &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+    &quot;sendTo&quot;: null,&#xd;
+    &quot;reserveMailStatus&quot;: &quot;04&quot;,&#xd;
+    &quot;reserveMailStatusName&quot;: &quot;未送信&quot;,&#xd;
+    &quot;remindMailStatus&quot;: &quot;04&quot;,&#xd;
+    &quot;remindMailStatusName&quot;: &quot;未送信&quot;,&#xd;
+    &quot;cancelMailStatus&quot;: null,&#xd;
+    &quot;updateDtTmSendMail&quot;: &quot;0001-01-01T00:00:00&quot;,&#xd;
+    &quot;updateDtTmCust&quot;: &quot;2020-10-30T19:58:14&quot;,&#xd;
+    &quot;mailBounce&quot;: null,&#xd;
+    &quot;mailBounceName&quot;: null,&#xd;
+    &quot;mailBounceDescription&quot;: null,&#xd;
+    &quot;reservationDetails&quot;: null,&#xd;
+    &quot;reservehistories&quot;: null,&#xd;
+    &quot;rsvId&quot;: &quot;${rsvId}&quot;,&#xd;
+    &quot;custId&quot;: ${custId},&#xd;
+    &quot;status&quot;: &quot;05&quot;,&#xd;
+    &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+    &quot;barCode&quot;: &quot;${barCode}&quot;,&#xd;
+    &quot;totalQuantity&quot;: 4,&#xd;
+    &quot;total&quot;: 44000,&#xd;
+    &quot;updateUserCd&quot;: &quot;730104&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;${updateDtTm}&quot;,&#xd;
+    &quot;insertDtTm&quot;: &quot;${insertDtTm}&quot;&#xd;
+  }&#xd;
+]</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/admin/api/ReserveAdmin/CancelReserve?isSendMailCancel=1&amp;updateUserCd=87654321</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en,ja;q=0.9,en-US;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NzY1NDMyMSIsInJvbGUiOiIxIiwiZXhwIjoxNjA1NTk1NjM3LCJpc3MiOiJzYWlzeXN0ZW0iLCJhdWQiOiJzYWlzeXN0ZW0ifQ.QV3di5rGUNqaKw6RnZImb37fqPsRRk1i6hchk7rBM64</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">942</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8FCZpLi1xl1LvpJ%2BQPXNJ0TFY54MQOLsBr3rc08ILBixRG6X4j90HHFBfBULzLVV2cL4sUCMMtuk9lrCAN1MtQ%2B3ydWnkWgSi4DpXKz0HXK0VQrqr7YRlV5pzadbg4fmFkNby%2FOqtWCAK%2BuRdkGiO9Bjw0yhNEz6Tfwjc%2B2t67%2B5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NzY1NDMyMSIsInJvbGUiOiIxIiwiZXhwIjoxNjA1NTk1NjM3LCJpc3MiOiJzYWlzeXN0ZW0iLCJhdWQiOiJzYWlzeXN0ZW0ifQ.QV3di5rGUNqaKw6RnZImb37fqPsRRk1i6hchk7rBM64; userData=%7B%22userCode%22%3A%2287654321%22%2C%22password%22%3Anull%2C%22userNameKanji%22%3A%22admin%201%22%2C%22userNameKana%22%3A%22%E3%81%8B%E3%81%AA%22%2C%22mailAddress%22%3A%22dhbcdbh%40cdmk%22%2C%22department%22%3A1%2C%22updateUserCd%22%3A%22auto%22%2C%22updateDtTm%22%3A%222020-10-21T13%3A39%3A23%22%7D</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/admin/manageOrder</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">C:/Users/LocNT/Desktop/FO/2.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">rsvId,custId,barCode,updateDtTm,insertDtTm</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="order" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;reservation&quot;: {&#xd;
+    &quot;status&quot;: &quot;01&quot;,&#xd;
+    &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+    &quot;total&quot;: 44000,&#xd;
+    &quot;totalQuantity&quot;: 4&#xd;
+  },&#xd;
+  &quot;dataProduct&quot;: [&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;XXS&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 1000,&#xd;
+      &quot;updateUserCd&quot;: &quot;87654321&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T22:12:12&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;XS&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 14,&#xd;
+      &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T12:53:48&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;S&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 14,&#xd;
+      &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T12:53:48&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;count&quot;: 1,&#xd;
+      &quot;maxCount&quot;: 3,&#xd;
+      &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+      &quot;size&quot;: &quot;M&quot;,&#xd;
+      &quot;color&quot;: &quot;BK&quot;,&#xd;
+      &quot;year&quot;: &quot;2021&quot;,&#xd;
+      &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+      &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+      &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+      &quot;brand&quot;: &quot;G&quot;,&#xd;
+      &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+      &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+      &quot;price&quot;: 11000,&#xd;
+      &quot;inventoryNumber&quot;: 19,&#xd;
+      &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+      &quot;updateDtTm&quot;: &quot;2020-11-03T12:53:48&quot;,&#xd;
+      &quot;quantity&quot;: 1,&#xd;
+      &quot;subTotal&quot;: 11000&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;custInfo&quot;: {&#xd;
+    &quot;province&quot;: &quot;01&quot;,&#xd;
+    &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+    &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+    &quot;kanjiFamilyName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanjiFirstName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+    &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+    &quot;phoneNumber&quot;: &quot;035656566&quot;,&#xd;
+    &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+    &quot;mailAddressConfirm&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+    &quot;provinceName&quot;: &quot;北海道&quot;&#xd;
+  }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">rsv.fobz.jp</stringProp>
+          <stringProp name="HTTPSampler.port">1508</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/api/ReservationDetail/InsertReservationDetail</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-order" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="accept" elementType="Header">
+                <stringProp name="Header.name">accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="accept-encoding" elementType="Header">
+                <stringProp name="Header.name">accept-encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="accept-language" elementType="Header">
+                <stringProp name="Header.name">accept-language</stringProp>
+                <stringProp name="Header.value">en,ja;q=0.9,en-US;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NzY1NDMyMSIsInJvbGUiOiIxIiwiZXhwIjoxNjA1NzA0OTc0LCJpc3MiOiJzYWlzeXN0ZW0iLCJhdWQiOiJzYWlzeXN0ZW0ifQ.7w0-PUmofl23LCUTLXzNsN4PKs4oTy_q0O_eBGEd9ro</stringProp>
+              </elementProp>
+              <elementProp name="content-length" elementType="Header">
+                <stringProp name="Header.name">content-length</stringProp>
+                <stringProp name="Header.value">1939</stringProp>
+              </elementProp>
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="cookie" elementType="Header">
+                <stringProp name="Header.name">cookie</stringProp>
+                <stringProp name="Header.value">_ga=GA1.2.1751532718.1604404488; _gid=GA1.2.629887576.1604404488; .AspNetCore.Session=CfDJ8Nz2yAyTVuJPlEQ%2FDMiVk06MapRh8hHb1qJX5hiwXkNDyIKD8lOSs8C0uwCpMFmQZ4xQb2nj9xuPH4%2FFBFngk9PRLUeqtCcz5i7fJl4gesamKcA9kjP%2B0ls%2B%2BLOUhRd%2FqmdAB5U3eZ1Rrc8fExmDjPx30Cuz%2FfSnYIJGKjgcVCJC; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NzY1NDMyMSIsInJvbGUiOiIxIiwiZXhwIjoxNjA1NzA0OTc0LCJpc3MiOiJzYWlzeXN0ZW0iLCJhdWQiOiJzYWlzeXN0ZW0ifQ.7w0-PUmofl23LCUTLXzNsN4PKs4oTy_q0O_eBGEd9ro; userData=%7B%22userCode%22%3A%2287654321%22%2C%22password%22%3Anull%2C%22userNameKanji%22%3A%22admin%201%22%2C%22userNameKana%22%3A%22%E3%81%8B%E3%81%AA%22%2C%22mailAddress%22%3A%22dhbcdbh%40cdmk%22%2C%22department%22%3A1%2C%22updateUserCd%22%3Anull%2C%22updateDtTm%22%3A%222020-11-02T03%3A45%3A32%22%7D</stringProp>
+              </elementProp>
+              <elementProp name="origin" elementType="Header">
+                <stringProp name="Header.name">origin</stringProp>
+                <stringProp name="Header.value">https://rsv.fobz.jp:1508</stringProp>
+              </elementProp>
+              <elementProp name="referer" elementType="Header">
+                <stringProp name="Header.name">referer</stringProp>
+                <stringProp name="Header.value">https://rsv.fobz.jp:1508/orderConfirm</stringProp>
+              </elementProp>
+              <elementProp name="sec-fetch-dest" elementType="Header">
+                <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+              <elementProp name="sec-fetch-mode" elementType="Header">
+                <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="sec-fetch-site" elementType="Header">
+                <stringProp name="Header.name">sec-fetch-site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="user-agent" elementType="Header">
+                <stringProp name="Header.name">user-agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Nhận tiền-vsc" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;shopName&quot;: &quot;ALGY SoLaDo竹下通り店&quot;,&#xd;
+  &quot;statusName&quot;: &quot;予約(入金待ち)&quot;,&#xd;
+  &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanjiFamilyName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanjiFirstName&quot;: &quot;せい&quot;,&#xd;
+  &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+  &quot;province&quot;: &quot;01&quot;,&#xd;
+  &quot;provinceName&quot;: &quot;北海道&quot;,&#xd;
+  &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+  &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+  &quot;adrCd3&quot;: null,&#xd;
+  &quot;phoneNumber&quot;: &quot;035656566&quot;,&#xd;
+  &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+  &quot;sendTo&quot;: null,&#xd;
+  &quot;reserveMailStatus&quot;: null,&#xd;
+  &quot;reserveMailStatusName&quot;: null,&#xd;
+  &quot;remindMailStatus&quot;: null,&#xd;
+  &quot;remindMailStatusName&quot;: null,&#xd;
+  &quot;cancelMailStatus&quot;: null,&#xd;
+  &quot;updateDtTmSendMail&quot;: &quot;0001-01-01T00:00:00&quot;,&#xd;
+  &quot;updateDtTmCust&quot;: &quot;2020-11-03T22:25:45&quot;,&#xd;
+  &quot;mailBounce&quot;: null,&#xd;
+  &quot;mailBounceName&quot;: null,&#xd;
+  &quot;mailBounceDescription&quot;: null,&#xd;
+  &quot;reservationDetails&quot;: null,&#xd;
+  &quot;reservehistories&quot;: null,&#xd;
+  &quot;rsvId&quot;: &quot;${rsvId}&quot;,&#xd;
+  &quot;custId&quot;: ${custId},&#xd;
+  &quot;status&quot;: &quot;02&quot;,&#xd;
+  &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+  &quot;barCode&quot;: &quot;${barCode}&quot;,&#xd;
+  &quot;totalQuantity&quot;: 4,&#xd;
+  &quot;total&quot;: 44000,&#xd;
+  &quot;updateUserCd&quot;: null,&#xd;
+  &quot;updateDtTm&quot;: &quot;${updateDtTm}&quot;,&#xd;
+  &quot;insertDtTm&quot;: &quot;${insertDtTm}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">rsv.fobz.jp</stringProp>
+          <stringProp name="HTTPSampler.port">1508</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/shop/api/Store/UpdateReserve?lastStatus=01&amp;shopName=ALGY+SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97&amp;updateUserCd=730104</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="accept" elementType="Header">
+                <stringProp name="Header.name">accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="accept-encoding" elementType="Header">
+                <stringProp name="Header.name">accept-encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="accept-language" elementType="Header">
+                <stringProp name="Header.name">accept-language</stringProp>
+                <stringProp name="Header.value">ja,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5,en;q=0.4</stringProp>
+              </elementProp>
+              <elementProp name="authorization" elementType="Header">
+                <stringProp name="Header.name">authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTcwOTYwMywiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.Ze2VqGVeapTQMQhGgNJuWB2lvgeNc-4uR9cyean1L4g</stringProp>
+              </elementProp>
+              <elementProp name="content-length" elementType="Header">
+                <stringProp name="Header.name">content-length</stringProp>
+                <stringProp name="Header.value">930</stringProp>
+              </elementProp>
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="cookie" elementType="Header">
+                <stringProp name="Header.name">cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8Nz2yAyTVuJPlEQ%2FDMiVk07HjfEbPVkljjxlNcse2MbIEhmVvsDahAQLx9%2FC03ihw096UTr1FRm5xRuydszq7aGi5r%2Bz1RZznDK0FTr810s65g%2BJZXJOPNZ4pZ%2Bo6JhyG6I1qKf%2BSDVICDdkMacNaS1xSG8FAHj%2BgSww00zOFdjJ; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTcwOTYwMywiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.Ze2VqGVeapTQMQhGgNJuWB2lvgeNc-4uR9cyean1L4g; userData=%7B%22userCode%22%3A%22730104%22%2C%22password%22%3Anull%2C%22userNameKanji%22%3A%22ALGY%20SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97%22%2C%22userNameKana%22%3A%22%EF%BD%B1%EF%BE%99%EF%BD%BC%EF%BE%9E%EF%BD%B0%20%EF%BD%BF%EF%BE%97%EF%BE%84%EF%BE%9E%EF%BE%80%EF%BD%B9%EF%BD%BC%EF%BE%80%EF%BE%84%EF%BE%9E%EF%BD%B5%EF%BE%98%EF%BE%83%EF%BE%9D%22%2C%22mailAddress%22%3A%22730104%40shop.fointl.com%22%2C%22department%22%3A2%2C%22updateUserCd%22%3Anull%2C%22updateDtTm%22%3A%222020-11-02T03%3A45%3A30%22%7D</stringProp>
+              </elementProp>
+              <elementProp name="origin" elementType="Header">
+                <stringProp name="Header.name">origin</stringProp>
+                <stringProp name="Header.value">https://rsv.fobz.jp:1508</stringProp>
+              </elementProp>
+              <elementProp name="referer" elementType="Header">
+                <stringProp name="Header.name">referer</stringProp>
+                <stringProp name="Header.value">https://rsv.fobz.jp:1508/shop/home</stringProp>
+              </elementProp>
+              <elementProp name="sec-fetch-dest" elementType="Header">
+                <stringProp name="Header.name">sec-fetch-dest</stringProp>
+                <stringProp name="Header.value">empty</stringProp>
+              </elementProp>
+              <elementProp name="sec-fetch-mode" elementType="Header">
+                <stringProp name="Header.name">sec-fetch-mode</stringProp>
+                <stringProp name="Header.value">cors</stringProp>
+              </elementProp>
+              <elementProp name="sec-fetch-site" elementType="Header">
+                <stringProp name="Header.name">sec-fetch-site</stringProp>
+                <stringProp name="Header.value">same-origin</stringProp>
+              </elementProp>
+              <elementProp name="user-agent" elementType="Header">
+                <stringProp name="Header.name">user-agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/90.0.148 Chrome/84.0.4147.148 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">C:/Users/LocNT/Desktop/FO/9.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">rsvId,custId,barCode,updateDtTm,insertDtTm</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="bàn giao" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;shopName&quot;: &quot;ALGY SoLaDo竹下通り店&quot;,&#xd;
+  &quot;statusName&quot;: &quot;入金完了(引渡し待ち）&quot;,&#xd;
+  &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+  &quot;kanjiFamilyName&quot;: &quot;50&quot;,&#xd;
+  &quot;kanjiFirstName&quot;: &quot;51&quot;,&#xd;
+  &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+  &quot;province&quot;: &quot;01&quot;,&#xd;
+  &quot;provinceName&quot;: &quot;北海道&quot;,&#xd;
+  &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+  &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+  &quot;adrCd3&quot;: null,&#xd;
+  &quot;phoneNumber&quot;: &quot;0656562532&quot;,&#xd;
+  &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+  &quot;sendTo&quot;: &quot;01&quot;,&#xd;
+  &quot;reserveMailStatus&quot;: &quot;01&quot;,&#xd;
+  &quot;reserveMailStatusName&quot;: null,&#xd;
+  &quot;remindMailStatus&quot;: null,&#xd;
+  &quot;remindMailStatusName&quot;: null,&#xd;
+  &quot;cancelMailStatus&quot;: null,&#xd;
+  &quot;updateDtTmSendMail&quot;: &quot;2020-10-30T15:51:39&quot;,&#xd;
+  &quot;updateDtTmCust&quot;: &quot;2020-10-30T15:47:06&quot;,&#xd;
+  &quot;mailBounce&quot;: null,&#xd;
+  &quot;mailBounceName&quot;: null,&#xd;
+  &quot;mailBounceDescription&quot;: null,&#xd;
+  &quot;reservationDetails&quot;: null,&#xd;
+  &quot;reservehistories&quot;: null,&#xd;
+  &quot;rsvId&quot;: &quot;${rsvId}&quot;,&#xd;
+  &quot;custId&quot;: ${custId},&#xd;
+  &quot;status&quot;: &quot;04&quot;,&#xd;
+  &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+  &quot;barCode&quot;: &quot;${barCode}&quot;,&#xd;
+  &quot;totalQuantity&quot;: 4,&#xd;
+  &quot;total&quot;: 99000,&#xd;
+  &quot;updateUserCd&quot;: &quot;730104&quot;,&#xd;
+  &quot;updateDtTm&quot;: &quot;${updateDtTm}&quot;,&#xd;
+  &quot;insertDtTm&quot;: &quot;${insertDtT}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/shop/api/Store/UpdateReserve?lastStatus=02&amp;shopName=ALGY+SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97&amp;updateUserCd=730104</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">ja,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5,en;q=0.4</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTM0MDI2MCwiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.S5K9FZ3sO7_uLWfaFcJuQ-9m-ymmjacB2iKQ2-b4Oy4</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">941</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8FCZpLi1xl1LvpJ%2BQPXNJ0Qfwoip3pkgvTYKrKVpGQmlQCccylCPpcrvtcnzAiJ5dYqf3VU7qzxvmzKRq2%2FSjFypXAt9OkG89a7smr0F5CFx8LeUROOGaLyvcl2GMYeL4lwckH%2FSgeDCasxtil0AMdkugzEFoxHARHUZBP4k3Td2; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI3MzAxMDQiLCJyb2xlIjoiMiIsImV4cCI6MTYwNTM0MDI2MCwiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.S5K9FZ3sO7_uLWfaFcJuQ-9m-ymmjacB2iKQ2-b4Oy4; userData=%7B%22userCode%22%3A%22730104%22%2C%22password%22%3Anull%2C%22userNameKanji%22%3A%22ALGY%20SoLaDo%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%E5%BA%97%22%2C%22userNameKana%22%3A%22%EF%BD%B1%EF%BE%99%EF%BD%BC%EF%BE%9E%EF%BD%B0%20%EF%BD%BF%EF%BE%97%EF%BE%84%EF%BE%9E%EF%BE%80%EF%BD%B9%EF%BD%BC%EF%BE%80%EF%BE%84%EF%BE%9E%EF%BD%B5%EF%BE%98%EF%BE%83%EF%BE%9D%22%2C%22mailAddress%22%3A%22730104%40shop.fointl.com%22%2C%22department%22%3A2%2C%22updateUserCd%22%3A%22auto%22%2C%22updateDtTm%22%3A%222020-10-26T16%3A07%3A06%22%7D</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/shop/home</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/90.0.148 Chrome/84.0.4147.148 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">C:/Users/LocNT/Desktop/FO/b.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">rsvId,custId,barCode,updateDtTm,insertDtTm</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cancle order" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+  {&#xd;
+    &quot;shopName&quot;: &quot;ALGY SoLaDo竹下通り店&quot;,&#xd;
+    &quot;statusName&quot;: &quot;入金完了(引渡し待ち）&quot;,&#xd;
+    &quot;kanaFamilyName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanaFirstName&quot;: &quot;せい&quot;,&#xd;
+    &quot;kanjiFamilyName&quot;: &quot;1&quot;,&#xd;
+    &quot;kanjiFirstName&quot;: &quot;order&quot;,&#xd;
+    &quot;zipCode&quot;: &quot;0600000&quot;,&#xd;
+    &quot;province&quot;: &quot;01&quot;,&#xd;
+    &quot;provinceName&quot;: &quot;北海道&quot;,&#xd;
+    &quot;adrCd1&quot;: &quot;札幌市中央区&quot;,&#xd;
+    &quot;adrCd2&quot;: &quot;&quot;,&#xd;
+    &quot;adrCd3&quot;: null,&#xd;
+    &quot;phoneNumber&quot;: &quot;012345678&quot;,&#xd;
+    &quot;mailAddress&quot;: &quot;nguyenloc106106@gmail.com&quot;,&#xd;
+    &quot;sendTo&quot;: null,&#xd;
+    &quot;reserveMailStatus&quot;: &quot;04&quot;,&#xd;
+    &quot;reserveMailStatusName&quot;: &quot;未送信&quot;,&#xd;
+    &quot;remindMailStatus&quot;: &quot;04&quot;,&#xd;
+    &quot;remindMailStatusName&quot;: &quot;未送信&quot;,&#xd;
+    &quot;cancelMailStatus&quot;: null,&#xd;
+    &quot;updateDtTmSendMail&quot;: &quot;0001-01-01T00:00:00&quot;,&#xd;
+    &quot;updateDtTmCust&quot;: &quot;2020-10-30T19:58:14&quot;,&#xd;
+    &quot;mailBounce&quot;: null,&#xd;
+    &quot;mailBounceName&quot;: null,&#xd;
+    &quot;mailBounceDescription&quot;: null,&#xd;
+    &quot;reservationDetails&quot;: null,&#xd;
+    &quot;reservehistories&quot;: null,&#xd;
+    &quot;rsvId&quot;: &quot;${rsvId}&quot;,&#xd;
+    &quot;custId&quot;: ${custId},&#xd;
+    &quot;status&quot;: &quot;05&quot;,&#xd;
+    &quot;shopCode&quot;: &quot;730104&quot;,&#xd;
+    &quot;barCode&quot;: &quot;${barCode}&quot;,&#xd;
+    &quot;totalQuantity&quot;: 4,&#xd;
+    &quot;total&quot;: 44000,&#xd;
+    &quot;updateUserCd&quot;: &quot;730104&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;${updateDtTm}&quot;,&#xd;
+    &quot;insertDtTm&quot;: &quot;${insertDtTm}&quot;&#xd;
+  }&#xd;
+]</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/admin/api/ReserveAdmin/CancelReserve?isSendMailCancel=1&amp;updateUserCd=87654321</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en,ja;q=0.9,en-US;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NzY1NDMyMSIsInJvbGUiOiIxIiwiZXhwIjoxNjA1NTk1NjM3LCJpc3MiOiJzYWlzeXN0ZW0iLCJhdWQiOiJzYWlzeXN0ZW0ifQ.QV3di5rGUNqaKw6RnZImb37fqPsRRk1i6hchk7rBM64</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">942</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8FCZpLi1xl1LvpJ%2BQPXNJ0TFY54MQOLsBr3rc08ILBixRG6X4j90HHFBfBULzLVV2cL4sUCMMtuk9lrCAN1MtQ%2B3ydWnkWgSi4DpXKz0HXK0VQrqr7YRlV5pzadbg4fmFkNby%2FOqtWCAK%2BuRdkGiO9Bjw0yhNEz6Tfwjc%2B2t67%2B5; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NzY1NDMyMSIsInJvbGUiOiIxIiwiZXhwIjoxNjA1NTk1NjM3LCJpc3MiOiJzYWlzeXN0ZW0iLCJhdWQiOiJzYWlzeXN0ZW0ifQ.QV3di5rGUNqaKw6RnZImb37fqPsRRk1i6hchk7rBM64; userData=%7B%22userCode%22%3A%2287654321%22%2C%22password%22%3Anull%2C%22userNameKanji%22%3A%22admin%201%22%2C%22userNameKana%22%3A%22%E3%81%8B%E3%81%AA%22%2C%22mailAddress%22%3A%22dhbcdbh%40cdmk%22%2C%22department%22%3A1%2C%22updateUserCd%22%3A%22auto%22%2C%22updateDtTm%22%3A%222020-10-21T13%3A39%3A23%22%7D</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/admin/manageOrder</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">C:/Users/LocNT/Desktop/FO/2.csv</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames">rsvId,custId,barCode,updateDtTm,insertDtTm</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group phase 3" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="order" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;dataOrder&quot;:{&#xd;
+      &quot;status&quot;:&quot;01&quot;,&#xd;
+      &quot;shopCd&quot;:null,&#xd;
+      &quot;total&quot;:5500,&#xd;
+      &quot;totalQuantity&quot;:1,&#xd;
+      &quot;receiveWay&quot;:&quot;02&quot;,&#xd;
+      &quot;paymentWay&quot;:&quot;02&quot;,&#xd;
+      &quot;isDiscount&quot;:true,&#xd;
+      &quot;bussinessCd&quot;:&quot;1&quot;,&#xd;
+      &quot;brandCd&quot;:&quot;J&quot;,&#xd;
+      &quot;brandname&quot;:&quot;BREEZE&quot;,&#xd;
+      &quot;shopName&quot;:null&#xd;
+   },&#xd;
+   &quot;dataProduct&quot;:[&#xd;
+      {&#xd;
+         &quot;sku&quot;:&quot;J182011BKZZM&quot;,&#xd;
+         &quot;bussinessCd&quot;:null,&#xd;
+         &quot;imageUrl&quot;:null,&#xd;
+         &quot;isMainInListPage&quot;:false,&#xd;
+         &quot;isMainInDetailPage&quot;:false,&#xd;
+         &quot;brandCd&quot;:&quot;J&quot;,&#xd;
+         &quot;brandName&quot;:&quot;BREEZE&quot;,&#xd;
+         &quot;subBrand&quot;:null,&#xd;
+         &quot;sizeName&quot;:&quot;M&quot;,&#xd;
+         &quot;sizeCd&quot;:&quot;ZZM&quot;,&#xd;
+         &quot;colorName&quot;:&quot;ブラック&quot;,&#xd;
+         &quot;colorCd&quot;:&quot;BK&quot;,&#xd;
+         &quot;inventoryNumberSub&quot;:&quot;2,3,0&quot;,&#xd;
+         &quot;totalInventoryNumber&quot;:0,&#xd;
+         &quot;lstMProductDetail&quot;:null,&#xd;
+         &quot;lstProductDelete&quot;:null,&#xd;
+         &quot;dataProduct&quot;:null,&#xd;
+         &quot;txtPrice&quot;:null,&#xd;
+         &quot;inventoryNumber&quot;:&quot;2&quot;,&#xd;
+         &quot;txtYear&quot;:null,&#xd;
+         &quot;txtDisplay&quot;:null,&#xd;
+         &quot;txtError&quot;:null,&#xd;
+         &quot;productCd&quot;:&quot;J182011&quot;,&#xd;
+         &quot;productName&quot;:&quot;ジュニア福袋4点セット　ON&quot;,&#xd;
+         &quot;productName1&quot;:null,&#xd;
+         &quot;year&quot;:0,&#xd;
+         &quot;brandRltId&quot;:0,&#xd;
+         &quot;price&quot;:5500,&#xd;
+         &quot;displayFlg&quot;:false,&#xd;
+         &quot;maxSizeCanOrder&quot;:2,&#xd;
+         &quot;maxAmountCanOrder&quot;:60000,&#xd;
+         &quot;subBrandId&quot;:null,&#xd;
+         &quot;createUserCd&quot;:null,&#xd;
+         &quot;createDtTm&quot;:&quot;0001-01-01T00:00:00&quot;,&#xd;
+         &quot;updateUserCd&quot;:null,&#xd;
+         &quot;updateDtTm&quot;:&quot;0001-01-01T00:00:00&quot;,&#xd;
+         &quot;delFlg&quot;:false,&#xd;
+         &quot;maxCountCanOrder&quot;:[&#xd;
+            0,&#xd;
+            1,&#xd;
+            2&#xd;
+         ],&#xd;
+         &quot;lstColor&quot;:[&#xd;
+            &quot;ブラック&quot;,&#xd;
+            &quot;ブラウン&quot;,&#xd;
+            &quot;ネイビーブルー&quot;&#xd;
+         ],&#xd;
+         &quot;lstInventoryNumber&quot;:[&#xd;
+            &quot;2&quot;,&#xd;
+            &quot;3&quot;,&#xd;
+            &quot;0&quot;&#xd;
+         ],&#xd;
+         &quot;lstColorCd&quot;:[&#xd;
+            &quot;BK&quot;,&#xd;
+            &quot;BR&quot;,&#xd;
+            &quot;NB&quot;&#xd;
+         ],&#xd;
+         &quot;quantity&quot;:1,&#xd;
+         &quot;messErr&quot;:&quot;&quot;,&#xd;
+         &quot;subTotal&quot;:5500&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;custInfo&quot;:{&#xd;
+      &quot;province&quot;:&quot;01&quot;,&#xd;
+      &quot;adrCd1&quot;:&quot;札幌市中央区&quot;,&#xd;
+      &quot;adrCd2&quot;:&quot;住所２&quot;,&#xd;
+      &quot;zipCodeDsp&quot;:&quot;060-0000&quot;,&#xd;
+      &quot;kanjiFamilyName&quot;:&quot;姓&quot;,&#xd;
+      &quot;kanjiFirstName&quot;:&quot;姓&quot;,&#xd;
+      &quot;kanaFamilyName&quot;:&quot;せい&quot;,&#xd;
+      &quot;kanaFirstName&quot;:&quot;せい&quot;,&#xd;
+      &quot;zipCd&quot;:&quot;0600000&quot;,&#xd;
+      &quot;adrCd3&quot;:&quot;住所３(建物名等）&quot;,&#xd;
+      &quot;phoneNumber&quot;:&quot;312345678&quot;,&#xd;
+      &quot;mailAddress&quot;:&quot;quachcongxuat@gmail.com&quot;,&#xd;
+      &quot;mailAddressConfirm&quot;:&quot;quachcongxuat@gmail.com&quot;,&#xd;
+      &quot;provinceName&quot;:&quot;北海道&quot;&#xd;
+   },&#xd;
+   &quot;custRecieveInfo&quot;:{&#xd;
+      &quot;province&quot;:&quot;01&quot;,&#xd;
+      &quot;kanjiFamilyName&quot;:&quot;姓&quot;,&#xd;
+      &quot;kanjiFirstName&quot;:&quot;姓&quot;,&#xd;
+      &quot;kanaFamilyName&quot;:&quot;せい&quot;,&#xd;
+      &quot;kanaFirstName&quot;:&quot;せい&quot;,&#xd;
+      &quot;zipCd&quot;:&quot;0600000&quot;,&#xd;
+      &quot;zipCodeDsp&quot;:&quot;060-0000&quot;,&#xd;
+      &quot;provinceName&quot;:&quot;北海道&quot;,&#xd;
+      &quot;adrCd1&quot;:&quot;札幌市中央区&quot;,&#xd;
+      &quot;adrCd2&quot;:&quot;住所２&quot;,&#xd;
+      &quot;adrCd3&quot;:&quot;住所３(建物名等）&quot;,&#xd;
+      &quot;phoneNumber&quot;:&quot;312345678&quot;&#xd;
+   }&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8888</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/api/Order/InsertOrders</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-order" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMTExMTExMSIsImRlcGFydG1lbnQiOiIxIiwiUGVybWlzc2lvbnMiOiJET1dOX0NTVixVUEQsVklFVyxTSE9QX1JFUFJFU0VOVCIsImV4cCI6MTYxNDkyNDI0MCwiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.SfGv2BU6JPAp-hCv2crJqM_wsbMeGbJq3xlMQIsb3l4</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1835</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">.AspNetCore.Session=CfDJ8FL%2BKgOVQvBNr0FcYnztcpDMctlrvZHqFr%2BldFWOBz4IVAuFMhyQhNVuyaxK4SU1LHROcI%2FzM4ZXl04z9o8Av6T5h1l%2FvRyEu%2BXX%2Bexp1iCdmevkHiQ8VWPDl8%2F7BLnD8K3pkSYJaZp3YHGY681ESZaxZP194T3yuiQTYylZwORq; rootBussinessCd=null; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMTExMTExMSIsImRlcGFydG1lbnQiOiIxIiwiUGVybWlzc2lvbnMiOiJET1dOX0NTVixVUEQsVklFVyxTSE9QX1JFUFJFU0VOVCIsImV4cCI6MTYxNDkyNDI0MCwiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.SfGv2BU6JPAp-hCv2crJqM_wsbMeGbJq3xlMQIsb3l4; userData=%7B%22roleId%22%3A1%2C%22bussinessCd%22%3A%221%22%2C%22permissions%22%3A%22DOWN_CSV%2CUPD%2CVIEW%2CSHOP_REPRESENT%22%2C%22userNameKanji%22%3A%2211111111%22%2C%22userNameKana%22%3A%2211111111%22%2C%22accessToken%22%3A%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMTExMTExMSIsImRlcGFydG1lbnQiOiIxIiwiUGVybWlzc2lvbnMiOiJET1dOX0NTVixVUEQsVklFVyxTSE9QX1JFUFJFU0VOVCIsImV4cCI6MTYxNDkyNDI0MCwiaXNzIjoic2Fpc3lzdGVtIiwiYXVkIjoic2Fpc3lzdGVtIn0.SfGv2BU6JPAp-hCv2crJqM_wsbMeGbJq3xlMQIsb3l4%22%2C%22userCd%22%3A%2211111111%22%2C%22password%22%3Anull%2C%22department%22%3A1%2C%22refreshToken%22%3A%221bbd886460827015e5d605ed44252251%22%2C%22refreshTokenExpiryTime%22%3A%222021-03-02T09%3A50%3A26%22%2C%22createUserCd%22%3A%22Admin01%22%2C%22createDtTm%22%3A%222021-03-02T11%3A46%3A35%22%2C%22updateUserCd%22%3A%22Admin01%22%2C%22updateDtTm%22%3A%222021-03-02T15%3A42%3A08%22%2C%22delFlg%22%3Afalse%7D</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8888</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8888</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8888/order-confirm</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="send mail" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">[&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;XXS&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:05:42&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000,&#xd;
+    &quot;rsvId&quot;: &quot;R2011030342&quot;&#xd;
+  },&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;XS&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:50&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000&#xd;
+  },&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;S&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;auto&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:49&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000&#xd;
+  },&#xd;
+  {&#xd;
+    &quot;count&quot;: 1,&#xd;
+    &quot;maxCount&quot;: 3,&#xd;
+    &quot;productCode&quot;: &quot;G182011&quot;,&#xd;
+    &quot;size&quot;: &quot;M&quot;,&#xd;
+    &quot;color&quot;: &quot;BK&quot;,&#xd;
+    &quot;year&quot;: &quot;2021&quot;,&#xd;
+    &quot;colorName&quot;: &quot;ブラック&quot;,&#xd;
+    &quot;productName&quot;: &quot;ALGY　福袋7点セット【予約】&quot;,&#xd;
+    &quot;productName1&quot;: &quot;21春 福袋 ALGY&quot;,&#xd;
+    &quot;brand&quot;: &quot;G&quot;,&#xd;
+    &quot;subBrand&quot;: &quot;26&quot;,&#xd;
+    &quot;brandName&quot;: &quot;ALGY&quot;,&#xd;
+    &quot;price&quot;: 11000,&#xd;
+    &quot;inventoryNumber&quot;: 1,&#xd;
+    &quot;updateUserCd&quot;: &quot;87654321&quot;,&#xd;
+    &quot;updateDtTm&quot;: &quot;2020-11-03T19:23:49&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;subTotal&quot;: 11000&#xd;
+  }&#xd;
+]</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.10.114</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/api/Reservation/SendMailOrder?productName=ALGY%E3%80%80%E7%A6%8F%E8%A2%8B7%E7%82%B9%E3%82%BB%E3%83%83%E3%83%88%E3%80%90%E4%BA%88%E7%B4%84%E3%80%91 </stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager-send mail" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en,ja;q=0.9,en-US;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1518</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Cookie" elementType="Header">
+                <stringProp name="Header.name">Cookie</stringProp>
+                <stringProp name="Header.value">_ga=GA1.1.720304490.1604401131; _gid=GA1.1.997947762.1604401131</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://192.168.10.114:8080/orderFinish</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="variableNames"></stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

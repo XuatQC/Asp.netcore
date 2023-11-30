@@ -1,0 +1,552 @@
+.carousel-indicators li {
+	box-sizing: content-box;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	width: 8px !important;
+	height: 8px !important;
+	border-radius: 50%;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #3b8ea5 !important;
+	background-clip: padding-box;
+	border:unset !important;
+	opacity: .5;
+	transition: opacity .6s ease
+}
+ @media  screen and (max-width: 768px){
+    }
+    .header-line{
+        display: block;
+    }
+    
+    .footer-area .footer-menu-2 {
+        margin-bottom: 10px;
+    }
+    .footer-area ul {
+        text-align: center;
+    }
+    
+    .footer-area  .footer-menu-2 li {
+        font-size: 10px;
+    }
+    
+    .footer-area  ul li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .copyright {
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 0px ;
+    }
+    a, input, button, a img {
+        outline: none;
+        text-decoration: none;
+        color: #000;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .arrow-down {
+        display: block;
+        width: 0;
+        height: 0;
+        border: 10px solid #333;
+        margin-right: 5px;
+        border-bottom-width: 0;
+        border-right-color: transparent;
+        border-left-color: transparent;
+    }
+    .form-check-label{
+        margin: -5px 10px;
+    }
+    .form-check{
+        text-align: center;
+        /* margin-bottom: 20px; */
+        padding-left: unset !important;
+    }
+    .form-check-box{
+        margin: 10px auto;
+    }
+    body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 24px
+    }
+    /*DuyPN css start*/
+    
+
+	.title_text_detail{
+        color: black;
+        text-align: left;
+        font-weight: bold;
+        margin-top:30px;
+        margin-left:30px;
+        margin-bottom:20px;
+
+    }
+    
+    .scrollingDiv
+    {
+       overflow-y:scroll;
+       height: 146px;
+    }
+	
+    .scrollingDiv p
+    {
+		font-size: 12px;
+    }
+	
+    .static-area-wrap {
+        border: 2px solid #707070;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 10px;
+        color: black;
+		height:110px;
+		background:white;
+		margin: 15px 0 15px 0;
+    }
+
+    .text-footer{
+        margin: -20px auto 10px;
+        font-size: 10px;
+    }
+    /*DuyPN css end*/
+    
+    .home-20 {
+        background: #f5f5f5
+    }
+    
+    #main-20 {
+        overflow: hidden;
+        max-width: 1530px;
+        margin: 0 auto;
+        background: #fff;
+        position: relative
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0
+    }
+    
+    a {
+        text-decoration: none;
+        transition: .3s
+    }
+    
+    a:hover {
+        text-decoration: none
+    }
+    
+    p {
+        margin: 0
+    }
+    
+    button {
+        outline: none
+    }
+    
+    @media (min-width:1200px) {
+        .container {
+            max-width: 1440px
+        }
+    }
+    
+    @media (min-width:1920px) {
+        .container-fluid {
+            padding: 0 90px;
+            max-width: 1920px
+        }
+    }
+    
+    .border-1px {
+        border: 1px solid #ebebeb;
+        border-radius: 5px
+    }
+    
+    .border-t-1px {
+        border-top: 1px solid#ebebeb
+    }
+    
+    .list-product.border-b-0 {
+        border-bottom-color: transparent
+    }
+    
+    #backgroung-content {
+        background: #f5f5f5;
+        padding-top: 60px;
+        padding-bottom: 1px
+    }
+    
+    .hidden {
+        display: none
+    }
+    
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto
+    }
+    
+    .mtb-60px {
+        margin: 60px 0
+    }
+    
+    .ptb-100px {
+        padding: 100px 0
+    }
+    
+    .mb-60px {
+        margin-bottom: 60px
+    }
+    
+    .mr-30px {
+        margin-right: 30px
+    }
+    
+    .mlr-10px {
+        margin: 0 10px
+    }
+    
+    .plr-15px {
+        padding: 0 15px
+    }
+    
+    .mb-40px {
+        margin-bottom: 40px
+    }
+    
+    .mt-50px {
+        margin-top: 50px
+    }
+    
+    .mt-53px {
+        margin-top: 53px
+    }
+    
+    .mt-60px {
+        margin-top: 60px
+    }
+    
+    .mb-30px {
+        margin-bottom: 30px
+    }
+    
+    .mt-20 {
+        margin-top: 20px
+    }
+    
+    .mb-20px {
+        margin-bottom: 20px
+    }
+    
+    .mt-30 {
+        margin-top: 30px
+    }
+    
+    .mt-50 {
+        margin-top: 50px
+    }
+    
+    .mb-50px {
+        margin-bottom: 50px
+    }
+    
+    .m-0px {
+        margin: 0
+    }
+    
+    .row.mr-0px {
+        margin-right: 0
+    }
+    
+    .row.ml-0px {
+        margin-left: 0
+    }
+    
+    .row.mlr-30px {
+        margin-left: -30px;
+        margin-right: -30px
+    }
+    
+    .position-relative {
+        position: relative
+    }
+    
+    .plr-0px {
+        padding: 0
+    }
+    
+    .mb-0 .list-product {
+        margin-bottom: 0
+    }
+    
+    .mt-40 {
+        margin-top: 40px
+    }
+    
+    .home-8 .static-area {
+        margin-top: 20px;
+        margin-bottom: 50px
+	}
+	.fix_color-text{
+		color:#b3a7a7
+	}
+
+
+.product-details-content h2 {
+	font-size: 24px;
+	color: #253237;
+	font-weight: 600;
+	margin: 0 0 22px;
+	line-height: 16px
+}
+
+.reference {
+	font-size: 14px;
+	color: #253237;
+	font-weight: 700
+}
+
+.reference span {
+	font-weight: 400
+}
+
+.pro-details-rating-wrap {
+	display: flex;
+	margin: 10px 0 0
+}
+
+.pro-details-rating-wrap .rating-product {
+	margin-right: 20px
+}
+
+.product-details-content .old-price {
+	font-size: 22px;
+	margin: 20px 0
+}
+
+.pro-details-list {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid#ebebeb
+}
+
+.pro-details-color-wrap {
+	font-size: 14px;
+	font-weight: 700;
+	color: #253237
+}
+
+
+.pro-details-color-content li.active {
+	background-color: #434A54
+}
+
+.table{
+	margin-bottom: unset
+}
+.product-details-content .pro-details-quality .cart-plus-minus input.cart-plus-minus-box {
+	background: transparent none repeat scroll 0 0;
+	border: medium none;
+	color: #8f8f8f;
+	float: left;
+	font-size: 12px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 60px;
+	outline: none
+}
+
+.product-details-content .pro-details-quality .cart-plus-minus .dec.qtybutton {
+	height: 48px;
+	left: 0;
+	padding-top: 4px;
+	top: 0
+}
+
+.product-details-content .pro-details-quality .cart-plus-minus .inc.qtybutton {
+	height: 48px;
+	right: 0;
+	top: 0;
+	padding-top: 5px;
+
+}
+
+.product-details-content .pro-details-quality .cart-plus-minus .qtybutton {
+	color: #8f8f8f;
+	cursor: pointer;
+	float: inherit;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	margin: 0;
+	position: absolute;
+	text-align: center;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	width: 24px
+}
+
+.product-details-content .pro-details-quality .cart-plus-minus {
+	border: 1px solid #e8e8e8;
+	display: inline-block;
+	height: 30px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 64px
+}
+
+.owl-carousel .owl-item .brand-slider-item img {
+	max-width: 100%;
+	width: auto;
+	margin: auto
+}
+
+.owl-nav-style .owl-nav>div.owl-prev {
+	right: 43px
+}
+
+.owl-nav-style .owl-nav>div.owl-prev:before {
+	content: "\f3d2"
+}
+
+.owl-nav-style .owl-nav>div:before {
+	font-size: 14px;
+	line-height: 25px;
+	display: block;
+	font-family: "Ionicons";
+	font-weight: 600
+}
+
+.owl-nav-style .owl-nav>div.owl-next:before {
+	content: "\f3d3"
+}
+
+.owl-nav-style .owl-nav>div.owl-next {
+	right: 0
+}
+
+.brand-slider.owl-nav-style .owl-nav>div.owl-next {
+	right: 15px
+}
+
+.slider-home-16.owl-nav-style .owl-nav>div.owl-next {
+	right: 15px
+}
+
+.owl-nav-style .owl-nav>div:hover {
+	color: #fff;
+	border-color: #b61212;
+	background-color: #b61212
+}
+
+
+.custom-nav-style.responsive-owl-nav-style.owl-nav-style .owl-nav>div:hover {
+	box-shadow: 0 0 13.95px 1.05px rgba(0, 0, 0, .17)
+}
+
+.custom-nav-style.owl-nav-style .owl-nav>div.owl-prev {
+	right: 63px
+}
+
+.custom-nav-style.owl-nav-style .owl-nav>div.owl-next {
+	right: 20px
+}
+
+.responsive-owl-nav-style.owl-nav-style .owl-nav>div {
+	top: -55px
+}
+
+.custom-nav-style.responsive-owl-nav-style.owl-nav-style .owl-nav>div {
+	top: -44px
+}
+
+.responsive-owl-nav-style.owl-nav-style.owl-nav-style-4 .owl-nav>div {
+	top: -92px
+}
+
+.single-product-slider-active.owl-nav-style-2 .owl-nav>div.owl-next {
+	right: 15px
+}
+
+.single-product-slider-active.owl-nav-style-2 .owl-nav>div {
+	background: #4fb68d
+}
+
+.single-product-slider-active.owl-nav-style-2 .owl-nav>div:before {
+	color: #fff
+}
+
+.owl-nav-style-2 .owl-nav>div {
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+	color: #888;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #ebebeb;
+	background: #fff;
+	z-index: 1;
+	opacity: 1;
+	border-radius: 100%;
+	-webkit-transition: all 300ms linear;
+	-moz-transition: all 300ms linear;
+	-ms-transition: all 300ms linear;
+	-o-transition: all 300ms linear;
+	transition: all 300ms linear;
+	-webkit-transition: all 300ms linear;
+	-moz-transition: all 300ms linear;
+	-ms-transition: all 300ms linear;
+	-o-transition: all 300ms linear;
+	transition: all 300ms linear;
+	margin-top: -17px;
+	margin-left: -20px;
+	opacity: 0;
+	visibility: hidden
+}
+
+.owl-nav-style-2 .owl-nav>div.owl-prev {
+	left: 15px
+}
+
+.owl-nav-style-2:hover .owl-nav>div {
+	opacity: 1;
+	visibility: visible
+}
+/* -------------------- Remove arrow in input number -------------------- */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* -------------------- End Remove arrow in input number -------------------- */

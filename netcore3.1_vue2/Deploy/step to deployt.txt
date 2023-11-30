@@ -1,0 +1,67 @@
+
+step 1.
+	DB
+		Đẩy lại bảng user shop login
+	
+	
+	Backup lại DB mỗi khi build thì để bản backup mới nhất(cả phase 1 và phase 3)
+		trên môi trường KH
+		trên git
+		trên file
+
+	xong rồi thì tạo query init đẩy lên git
+	có thời gian thì update lại table query, đẩy file định nghĩa db lên
+
+step 2.
+	source
+		Backup lại source khi deploy lại
+			trên môi trường KH
+			trên git
+		Merge source vào nhánh merge_dev -> develop -> master?
+
+		sửa file config để tương ứng với môi trường thật
+		Có thời gian thì update lại file thiết kế và đẩy lại
+		
+step 3.
+	task
+		Backup lại source khi deploy lại
+			trên môi trường KH
+			trên git
+			
+			
+
+-----------Điểm chỉnh sửa----------------------
+- MH Quản lý tồn kho:
+ + Fix show message không thay đổi khi ấn btn Save lúc update
+ + Thêm item 表示/非表示 bị thiếu ở MH thêm mới/chỉnh sửa sản phẩm
+ + Bổ sung thêm message validate 2 item ブランド名 và サブブランド khi không có giá trị lúc click btn Save
+ 
+- MH Quản lý thời gian đặt trước
+ + Fix show message không thay đổi khi ấn btn Save lúc update
+ + Fix TH khi không nhập giờ thì sẽ defaut là 00:00:00
+
+- MH Quản lý layout khách hàng
+ + Fix show message không thay đổi khi ấn btn Save lúc update
+ + Fix bug của item 商品受け取り方法(非表示/表示)
+
+- MH Quản lý quyền
+ + thêm xử lý hiển thị được quyền với TH danh sách quyền từ 10 trở lên
+
+- MH Quản lý cửa hàng:
+ + fix cập nhật DB của item 営業時間 là null khi click clear khi Cập nhật cửa hàng
+ + Bổ sung: khi nhập mã bưu điện thì tự động hiển thị ra Tỉnh thành + Địa chỉ 1
+ 
+---------------------------------
+
+Còn lại,
+	.trim khi đăng nhập
+	Set sendmail region về 1 chỗ
+	Top page Check chưa có sản phẩm thì không đi được page detail
+	Shop chưa có trong bảng login
+	Chưa đẩy docs
+		DB, design
+		hướng dẫn config, build, deploy
+	
+	Fix cho ẩn hiện sản phẩm, bây giờ đang để cho ẩn hiện tất cả(trước đang xử lý cho hiển thị khi có nhiều hơn 1 sp)
+		phát sinh lỗi ở MH chi tiết sp khi có 1 sp bị ẩn thì sẽ chỉ hiển thị ảnh, (lỗi hiển thị)
+	

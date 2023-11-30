@@ -1,0 +1,35 @@
+Deploy phase 4
+	1. DB
+		- Thay đổi text của kbn nhận tiền, bàn giao
+		- Thay đổi giá trị 1 ưu tiên của 3 mã postcode
+		
+	2. source
+		- build source ở develop ở máy 34
+		- Backup source ở máy 214
+		- Cop source từ máy 34 sang
+			- Chú ý file config
+			- Source phải là folde source pull từ nhánh merged pull request, không có chỉnh sửa
+			
+	3. Bật service getmailbounce(schedule task)
+	
+	4. 
+	
+	
+* trên môi trường thật cần bật google ceo
+
+
+
+Backup
+	1. DB
+		Export Data staging
+		Đưa sang git doc
+		
+	2. Source
+		Copy folder build 
+		Đưa sang Git source deploy History foder backup
+		
+
+
+
+
+

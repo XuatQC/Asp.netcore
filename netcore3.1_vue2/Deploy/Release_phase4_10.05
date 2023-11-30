@@ -1,0 +1,11 @@
+relase FO 05/10
+	build lại client có google analytic
+	copy ảnh từ staging sang
+	giữ nguyên setting của product
+	đổi thêm port 443 và 80 để public?? confirm
+	copy nội dung của ngày của staging
+		copy những gì?
+			Data DB cop toàn bộ à hay 1 phần
+			các setting có đúng setting dành cho môi trường thật chưa?
+			Data cũ của product thì vẫn giữ đúng không?
+
